@@ -1,0 +1,24 @@
+package com.construtores;
+
+public class Cliente{
+	public int id;
+	public String nome;
+	public String email;
+	
+	public String cadastrar(){
+		return "Cadastro realizado";
+		
+	}
+	public String nomePorId(int id){
+		String msg="";
+		
+		if(id==id){
+			msg = this.nome;
+		}
+		else{
+			msg = "Não Localizado";
+		}
+		return msg;
+	}
+}
+

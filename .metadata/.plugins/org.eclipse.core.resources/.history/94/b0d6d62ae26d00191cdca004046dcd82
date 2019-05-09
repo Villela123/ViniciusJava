@@ -1,0 +1,83 @@
+package br.com.janelas;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class GerenciarProdutos extends JFrame{
+	//Elementos para a categoria
+	static JLabel lblIdCat = new JLabel("Id Categoria:");
+	static JLabel lblNomeCat = new JLabel("Nome Categoria:");
+	static JLabel lblDescCat = new JLabel("Descricao:");
+	
+	static JTextField txtIdCat = new JTextField();
+	static JTextField txtNomeCat = new JTextField();
+	static JTextField txtDescCat = new JTextField();
+	
+	static JButton btnCadCat = new JButton("Cadastrar Categoria");
+	
+	//Elementos para o Fornecedor
+	static JLabel lblIdFor = new JLabel("Id Fornecedor:");
+	static JLabel lblRS = new JLabel("Razao Social:");
+	static JLabel lblCnpj = new JLabel("CNPJ:");
+	
+	static JTextField txtIdFor = new JTextField();
+	static JTextField txtRS = new JTextField();
+	static JTextField txtCnpj = new JTextField();
+
+	static JButton btnCadFor = new JButton("Cadastrar Fornecedor");
+	
+	//Elementos para Produtos
+	static JLabel lblIdPr = new JLabel("Id Produto:");
+	static JLabel lblNomePr = new JLabel("Nome do Produto:");
+	static JLabel lblDescPr = new JLabel("Descricao Produto:");
+	static JLabel lblCategoria = new JLabel("Selecione uma Categoria:");
+	static JLabel lblFornecedor = new JLabel("Selecione um Fornecedor:");
+	static JLabel lblPrecoPr = new JLabel("Preco do Produto:");
+	
+	static JTextField txtIdPr = new JTextField();
+	static JTextField txtNomePr = new JTextField();
+	static JTextField txtDescPr = new JTextField();
+	static JTextField txtCategoria = new JTextField();
+	static JTextField txtFornecedor = new JTextField();
+	static JTextField txtPrecoPr = new JTextField();
+	
+	static JButton btnCadPr = new JButton("Cadastrar Produto");
+	
+	public static void main(String[] args){
+		JFrame gerenciar = new JFrame();
+		gerenciar.setTitle("Gerenciar Produtos");
+		gerenciar.setSize(700,400);
+		gerenciar.setLocationRelativeTo(null);
+		gerenciar.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		gerenciar.setResizable(true);
+		//Desativa redimensionamento
+		gerenciar.getContentPane().setLayout(null);
+		lblIdCat.setBounds(10,10,150,30);
+		gerenciar.add(lblIdCat);
+		txtIdCat.setBounds(10,45,80,30);
+		gerenciar.add(txtIdCat);
+		lblNomeCat.setBounds(10,75,150,30);
+		gerenciar.add(lblNomeCat);
+		txtNomeCat.setBounds(10,110,200,30);
+		gerenciar.add(txtNomeCat);
+		lblDescCat.setBounds(10,145,150,30);
+		gerenciar.add(lblDescCat);
+		txtDescCat.setBounds(10,180,400,30);
+		gerenciar.add(txtDescCat);
+		btnCadCat.setBounds(10,250,200,30);
+		gerenciar.add(btnCadCat);
+		lblIdFor.setBounds(10,300,200,30);
+		gerenciar.add(lblIdFor);
+		txtIdFor.setBounds(10,335,200,30);
+		gerenciar.add(txtIdFor);
+		lblRS.setBounds(10,370,300,30);
+		gerenciar.add(lblRS);
+		
+		
+		//Definir o gerenciamento do Layout como absoluto, ou seja, nulo
+		gerenciar.setVisible(true);
+	}
+	
+}

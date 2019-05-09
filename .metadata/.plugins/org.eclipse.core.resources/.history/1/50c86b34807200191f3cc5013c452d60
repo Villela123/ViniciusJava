@@ -1,0 +1,5 @@
+package com.poo.heranca;
+
+public abstract class Cliente {
+
+}

@@ -1,0 +1,31 @@
+package com.construtores;
+
+public class Cliente{
+	public int id;
+	public String nome;
+	public String email;
+	/*
+	 * Sempre publico
+	 * Sempre com o mesmo nome da classe
+	 * Nao tem tipo de retorno, ou seja, NAO é VOID ou qualquer outro tipo
+	 */
+		public Cliente(int id, String nome, String email){
+			
+		}
+		public String cadastrar(){
+		return "Cadastro realizado";
+		
+	}
+	public String nomePorId(int id){
+		String msg="";
+		
+		if(id==id){
+			msg = this.nome;
+		}
+		else{
+			msg = "Não Localizado";
+		}
+		return msg;
+	}
+}
+

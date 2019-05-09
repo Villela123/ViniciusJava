@@ -1,0 +1,12 @@
+package br.com.exemplo.basico;
+
+import com.construtores.Cliente;
+
+public class GerenciarCliente{
+	public static void main(String[] args){
+		//Instância da classe Cliente
+		Cliente cl = new Cliente();
+		String rs = cl.nomePorId(10);
+		System.out.println(rs);
+	}
+}
